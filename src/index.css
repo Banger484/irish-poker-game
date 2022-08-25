@@ -1,0 +1,106 @@
+:root {
+    --poker-red: #E5383B;
+    --poker-black: #0B090A;
+    --poker-green: rgb(17, 90, 62);
+}
+*, *::after, *::before {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+}
+
+.game-display {
+    background-color: var(--poker-green);
+    min-height: 100vh;
+    max-height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: 3fr 6fr .2fr 6fr .2fr 6fr .2fr 6fr .2fr
+}
+
+.drawn-card {
+    background-color: whitesmoke;
+    border-radius: 10%;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+}
+
+.first {
+    grid-column: 2 / 5;
+    grid-row: 2 / 3;
+}
+.controls {
+    background-color: whitesmoke;
+    border: 1px solid black;
+}
+.first-controls {
+    grid-column: 6 / 10;
+    grid-row: 2 / 3;
+}
+.second {
+    grid-column: 2 / 5;
+    grid-row: 4 / 5;
+}
+.second-controls {
+    grid-column: 6 / 10;
+    grid-row: 4 / 5;
+}
+.third {
+    grid-column: 2 / 5;
+    grid-row: 6 / 7;
+}
+.third-controls {
+    grid-column: 6 / 10;
+    grid-row: 6 / 7;
+}
+.fourth {
+    grid-column: 2 / 5;
+    grid-row: 8 / 9;
+}
+.fourth-controls {
+    grid-column: 6 / 10;
+    grid-row: 8 / 9;
+}
+
+.face {
+    font-size: 3rem;
+    margin: 0;
+}
+.suits {
+    height: 60px;
+    width: 60px;
+}
+
+.red {
+    color: var(--poker-red);
+}
+.black {
+    color: var(--poker-black);
+}
+
+.start-display {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    grid-column: 1 / 11;
+    grid-row: 1 / 2;
+}
+.game-title {
+    text-align: center;
+    color: whitesmoke;
+    font-size: 2.5rem;
+    margin: 0;
+}
+.card-count {
+    font-size: 1.2rem;
+    margin: 0;
+    color: whitesmoke;
+
+}
