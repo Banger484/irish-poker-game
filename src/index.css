@@ -35,8 +35,25 @@ body {
     grid-row: 2 / 3;
 }
 .controls {
-    background-color: whitesmoke;
-    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.controls button {
+    font-size: 1.3rem;
+    font-weight: bolder;
+    background-color: var(--poker-black);
+    color: whitesmoke;
+    border: none;
+    height: 35px;
+    
+}
+.red-btn {
+    background-color: var(--poker-red) !important;
+}
+.start-controls {
+    grid-column: 6 / 10;
+    grid-row: 2 / 9;
 }
 .first-controls {
     grid-column: 6 / 10;
@@ -65,6 +82,10 @@ body {
 .fourth-controls {
     grid-column: 6 / 10;
     grid-row: 8 / 9;
+}
+.final-controls {
+    grid-column: 6 / 10;
+    grid-row: 2 / 9;
 }
 
 .face {
